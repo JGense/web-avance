@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+
+<script type="text/jsx">
+    const paragraph = React.createElement('p', {style: {color: 'red'}}, 'Paragraph');
+    const paragraphs = React.createElement("ul", null,
+        React.createElement("li",{className: 'maclasse'},'Premier'),
+        React.createElement("li",null,'Deuxième')
+    );
+    ReactDOM.render(paragraphs, document.getElementById('root'));
+</script>
+
+</html>
