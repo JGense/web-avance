@@ -37,5 +37,6 @@ UserPanel.propTypes = {
 
 UserPanel.defaultProps = {
     lastname: "Gense",
-    firstname: "Jimmy"
+    firstname: "Jimmy",
+    mail: "baptiste.lecocq@gmail.com"
 };
