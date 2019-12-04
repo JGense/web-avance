@@ -9,18 +9,15 @@ export default class UserPanel extends React.Component {
     }
 
     render() {
-        return React.createElement('div', {className: "card", style: {
-                width:"18rem"
-            }}, [
-            React.createElement('img', {
-                src: "https://www.gravatar.com/avatar/"+md5(this.props.mail)+"?s=600",
-                className: "card-img-top"
-            }),
-            React.createElement('div', { className: "card-body"}, [
-                React.createElement('h5', { className:"card-title" }, this.props.firstname + " "+ this.props.lastname),
-                React.createElement('p', { className: "card-text"}, "Une petite description"),
-            ] )
-        ]);
+        return (
+            <div className={'card'} style={{width: "18rem"}}>
+                <img className={"card-img-top"} src={"https://www.gravatar.com/avatar/"+md5(this.props.mail)+"?s=600"}/>
+                <div className={"card-body"}>
+                    <h5 className={"card-title"}>{this.props.firstname} {this.props.lastname}</h5>
+                    <p className={"card-text"}>Une petite description</p>
+                </div>
+            </div>
+        );
     }
 }
 

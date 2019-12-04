@@ -25,4 +25,17 @@ export class AppClass extends React.Component {
     }
 }
 
+function Test() {
+    const name = "Toto";
+    const welcoming = <p>Bonjour {name}</p>
+
+    return (
+        <>
+            {welcoming}
+            {welcoming}
+        </>
+    )
+}
+
+//ReactDOM.render(<Test/>, document.getElementById('root'));
 ReactDOM.render(React.createElement(UserPanel, {mail: "baptiste.lecocq@gmail.com"}, null), document.getElementById('root'));
