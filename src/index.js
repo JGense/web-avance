@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import UserPanel from './UserPanel';
+import SncfSearch from './SncfSearch';
 
 export function App(props) {
     return React.createElement('p',{style: {color: "blue"}}, 'AppFunction '+props.name);
@@ -34,5 +35,5 @@ function Test() {
     )
 }
 
-ReactDOM.render(<Test/>, document.getElementById('root'));
+ReactDOM.render(<SncfSearch/>, document.getElementById('root'));
 //ReactDOM.render(React.createElement(UserPanel, {mail: "baptiste.lecocq@gmail.com"}, null), document.getElementById('root'));
